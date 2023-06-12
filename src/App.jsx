@@ -142,7 +142,7 @@ function App() {
             <button type='button' style={{ background: 'blue', color: 'white', width: '100%' }} onClick={handelOnSubmit} >Submit</button>
           </div>
 
-          <div style={{ marginRight: "40px" }}>
+          <div style={{ marginRight: "40px" , textAlign:'left' }}>
             <h2 style={{ textAlign: 'center' }}>All Combinations</h2>
             {value.length === 0 ? <h3 style={{ color: 'red' }}>There is no Comibiation right now</h3> : <ol>
               {value.map(elem => <li style={{ fontWeight: "600" }}>{elem.v.join(" , ")}</li>)}
