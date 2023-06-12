@@ -34,7 +34,7 @@ function App() {
   const cmb = [
     { t1:[1,2,3,4,5] ,t2:[6,7,8,9,10,11] },
     { t1:[3,4,5] ,t2:[1,2,6,7,8,9,10,11] },
-    { t1:[3,4,5,1,2,6,7,8,9,10,] ,t2:[11] }
+    { t1:[3,4,5,11,2,6,7,8,9,10,] ,t2:[1] }
   ]
 
   const handelOnChangeA = (e) => {
@@ -74,69 +74,71 @@ function App() {
   return (
     <>
       <div>
-        <div style={{ display: 'flex' , justifyContent:'center' }} >
+        <div className='parent' style={{ display: 'flex' , justifyContent:'center' }} >
          
           <div style={{marginRight:"40px"}}>
           <h2>Team A</h2>
-            name 1 : <input type="text" name="Aname1" value={A.Aname1}  onChange={handelOnChangeA}/>
+          <label style={{paddingRight:'10px'}}>name 1 :</label> <input type="text" name="Aname1" value={A.Aname1}  onChange={handelOnChangeA}/>
             <br />
-            name 2 : <input type="text" name="Aname2" value={A.Aname2} onChange={handelOnChangeA}  />
+            <label style={{paddingRight:'10px'}}>name 2 :</label> <input type="text" name="Aname2" value={A.Aname2} onChange={handelOnChangeA}  />
             <br />
-            name 3 : <input type="text" name="Aname3" value={A.Aname3} onChange={handelOnChangeA} />
+            <label style={{paddingRight:'10px'}}>name 3 :</label> <input type="text" name="Aname3" value={A.Aname3} onChange={handelOnChangeA} />
             <br />
-            name 4 : <input type="text" name="Aname4" value={A.Aname4} onChange={handelOnChangeA} />
+            <label style={{paddingRight:'10px'}} >name 4 :</label> <input type="text" name="Aname4" value={A.Aname4} onChange={handelOnChangeA} />
             <br />
-            name 5 : <input type="text" name="Aname5" value={A.Aname5} onChange={handelOnChangeA} />
+            <label style={{paddingRight:'10px'}}>name 5 :</label> <input type="text" name="Aname5" value={A.Aname5} onChange={handelOnChangeA} />
             <br />
-            name 6 : <input type="text" name="Aname6" value={A.Aname6} onChange={handelOnChangeA} />
+            <label style={{paddingRight:'10px'}}>name 6 :</label> <input type="text" name="Aname6" value={A.Aname6} onChange={handelOnChangeA} />
             <br />
-            name 7 : <input type="text" name="Aname7" value={A.Aname7} onChange={handelOnChangeA} />
+            <label style={{paddingRight:'10px'}}>name 7 :</label> <input type="text" name="Aname7" value={A.Aname7} onChange={handelOnChangeA} />
             <br />
-            name 8 : <input type="text" name="Aname8" value={A.Aname8} onChange={handelOnChangeA} />
+            <label style={{paddingRight:'10px'}}>name 8 :</label> <input type="text" name="Aname8" value={A.Aname8} onChange={handelOnChangeA} />
             <br />
-            name 9 : <input type="text" name="Aname9" value={A.Aname9} onChange={handelOnChangeA} />
+            <label style={{paddingRight:'10px'}}>name 9 :</label> <input type="text" name="Aname9" value={A.Aname9} onChange={handelOnChangeA} />
             <br />
-            name 10 : <input type="text" name="Aname10" value={A.Aname10} onChange={handelOnChangeA}/>
+            <label >name 10 :</label> <input type="text" name="Aname10" value={A.Aname10} onChange={handelOnChangeA}/>
             <br />
-            name 11 : <input type="text" name="Aname11" value={A.Aname11} onChange={handelOnChangeA}/>
+            <label >name 11 :</label> <input type="text" name="Aname11" value={A.Aname11} onChange={handelOnChangeA}/>
             <br />
           
           </div>
           <div style={{marginRight:"40px" }}>
           <h2>Team B</h2>
-            name 1 : <input type="text" name="Bname1" value={B.Bname1} onChange={handelOnChangeB}/>
+           <label style={{paddingRight:'10px'}} >name 1 :</label>  <input type="text" name="Bname1" value={B.Bname1} onChange={handelOnChangeB}/>
             <br />
-            name 2 : <input type="text" name="Bname2" value={B.Bname2}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}}>name 2 :</label> <input type="text" name="Bname2" value={B.Bname2}  onChange={handelOnChangeB} />
             <br />
-            name 3 : <input type="text" name="Bname3" value={B.Bname3}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}}>name 3 :</label> <input type="text" name="Bname3" value={B.Bname3}  onChange={handelOnChangeB} />
             <br />
-            name 4 : <input type="text" name="Bname4" value={B.Bname4}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}}>name 4 :</label> <input type="text" name="Bname4" value={B.Bname4}  onChange={handelOnChangeB} />
             <br />
-            name 5 : <input type="text" name="Bname5" value={B.Bname5}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}}>name 5 :</label> <input type="text" name="Bname5" value={B.Bname5}  onChange={handelOnChangeB} />
             <br />
-            name 6 : <input type="text" name="Bname6" value={B.Bname6}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}}>name 6 :</label> <input type="text" name="Bname6" value={B.Bname6}  onChange={handelOnChangeB} />
             <br />
-            name 7 : <input type="text" name="Bname7" value={B.Bname7}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}}>name 7 :</label> <input type="text" name="Bname7" value={B.Bname7}  onChange={handelOnChangeB} />
             <br />
-            name 8 : <input type="text" name="Bname8" value={B.Bname8}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}}>name 8 :</label> <input type="text" name="Bname8" value={B.Bname8}  onChange={handelOnChangeB} />
             <br />
-            name 9 : <input type="text" name="Bname9" value={B.Bname9}  onChange={handelOnChangeB} />
+            <label style={{paddingRight:'10px'}} >name 9 :</label> <input type="text" name="Bname9" value={B.Bname9}  onChange={handelOnChangeB} />
             <br />
-            name 10 : <input type="text" name="Bname10" value={B.Bname10} onChange={handelOnChangeB}  />
+            <label >name 10 :</label> <input type="text" name="Bname10" value={B.Bname10} onChange={handelOnChangeB}  />
             <br />
-            name 11 : <input type="text" name="Bname11" value={B.Bname11} onChange={handelOnChangeB}  />
+            <label >name 11 :</label> <input type="text" name="Bname11" value={B.Bname11} style={{marginBottom:'30px'}} onChange={handelOnChangeB}  />
             <br />
           
+            <button type='button' style={{background:'blue' , color:'white' , width:'100%'}} onClick={handelOnSubmit} >Submit</button>
           </div>
+         
           <div style={{marginRight:"40px"}}>
             <h2 style={{textAlign:'center'}}>All Combinations</h2>
-             <ol>
+            { value.length === 0? <h3 style={{color:'red'}}>There is no Comibiation right now</h3> :<ol>
              {value.map(elem=><li>{elem.v.join(" , ")}</li>)}
-             </ol>
+             </ol>}
           </div>
         </div>
 
-        <button type='button' onClick={handelOnSubmit} >Submit</button>
+       
       </div>
     </>
   )
